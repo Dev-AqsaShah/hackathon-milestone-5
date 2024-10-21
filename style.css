@@ -127,6 +127,8 @@ button:hover {
         height: auto;
         margin-bottom: 20px; /* Adds space between sections */
     }
+    .resume-section {
+        width: 100%;
 
     /* Adjust font sizes and padding for better readability */
     h2 {
