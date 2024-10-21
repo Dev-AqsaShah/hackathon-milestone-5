@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milestone-5  Resume Generator</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+
+
+
+    <label for="username"> Resume URL:</label>
+    <input type="text" id="username" name="username" required/> <br/>
+
+
+
+    <div class="container">
+        <div class="form-section">
+            <h2>Milestone-5 Resume Generator</h2>
+            <form id="resumeform">
+                <input type="text" id="name" placeholder="Name" />
+                <input type="text" id="email" placeholder="Email" />
+                <input type="text" id="phone" placeholder="Phone" />
+                <textarea id="education" placeholder="Education"></textarea>
+                <textarea id="experience" placeholder="Experience"></textarea>
+                <textarea id="skills" placeholder="Skills"></textarea>
+                <button type="submit">Generate Resume</button>
+            </form>
+        </div>
+
+        <div class="resume-section">
+            <div id="resumeOutput">
+                <h2>Generated Resume </h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to external JavaScript file -->
+</body>
+</html>

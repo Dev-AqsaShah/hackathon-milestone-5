@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: black;
+    color: white; /* Fixed color for text */
+}
+
+/* Container for Flex Layout */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 20px;
+    height: 100vh;
+}
+
+/* Styling the Form and Resume Sections */
+.form-section, .resume-section {
+    flex: 1;
+    padding: 20px;
+    background-color: rgb(244, 211, 240);
+    border: 2px solid rgb(237, 17, 237);
+    overflow: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    max-width: 45%;
+    margin: 0;
+    height: 75%;
+}
+
+.form-section {
+    height: 75%;
+}
+
+/* Styling Headings */
+h2 {
+    margin-top: 0;
+    text-align: center;
+    color: black;
+}
+
+/* Editable Fields */
+.editable {
+    cursor: pointer;
+}
+
+/* Input Styles */
+input[type="text"], textarea {
+    width: calc(100% - 1px);
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid pink;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Button Styling */
+button {
+    display: block;
+    width: 200px;
+    padding: 10px;
+    background-color: rgb(234, 147, 176);
+    color: black;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 20px auto;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+button:hover {
+    background-color: rgb(189, 75, 113);
+}
+
+/* Download Resume Button */
+.download-button {
+    display: block;
+    width: 200px;
+    padding: 10px;
+    background-color: rgb(5, 5, 64);
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 20px auto;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.download-button:hover {
+    background-color: rgb(0, 0, 139);
+}
+
+/* Resume Output Section */
+#resumeOutput {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid rgb(237, 17, 237);
+    border-radius: 8px;
+    background-color: rgb(232, 145, 220);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    height: 90%;
+    color: black;
+}
+
+#resumeOutput h2 {
+    color: black;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    /* Stack the sections vertically for smaller screens */
+    .container {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+    
+    .form-section, .resume-section {
+        max-width: 100%; /* Full width */
+        height: auto;
+        margin-bottom: 20px; /* Adds space between sections */
+    }
+
+    /* Adjust font sizes and padding for better readability */
+    h2 {
+        font-size: 1.5em;
+    }
+
+    input[type="text"], textarea {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    button, .download-button {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    #resumeOutput {
+        width: 100%;
+        height: auto;
+    }
+}
